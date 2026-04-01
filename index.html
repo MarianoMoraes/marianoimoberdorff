@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mariano Imoberdorff · BI Consultant Miami</title>
-<meta name="description" content="BI & Automation Consultant for small and mid-size businesses in Miami and Latin America. Power BI, n8n, AI workflows. English & Spanish.">
+<meta name="description" content="BI & Automation Consultant for small and mid-size businesses in Miami and Latin America.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
@@ -17,36 +17,48 @@
 <!-- NAV -->
 <nav id="navbar">
   <a href="#" class="nav-logo">MI<span>.</span></a>
+
+  <!-- Desktop -->
   <ul class="nav-links">
     <li><a href="#services" data-i18n="nav.services">Services</a></li>
     <li><a href="#work" data-i18n="nav.work">Work</a></li>
     <li><a href="#about" data-i18n="nav.about">About</a></li>
-    <li>
-      <button class="lang-toggle" id="langToggle" onclick="toggleLang()">ES</button>
-    </li>
+    <li><button class="lang-toggle" id="langToggle" onclick="toggleLang()">ES</button></li>
     <li><a href="mailto:mariano@marianoimoberdorff.com" class="nav-cta" data-i18n="nav.cta">Book a call</a></li>
   </ul>
+
+  <!-- Mobile controls -->
+  <div class="nav-mobile">
+    <button class="lang-toggle" id="langToggleMobile" onclick="toggleLang()">ES</button>
+    <a href="mailto:mariano@marianoimoberdorff.com" class="nav-cta" data-i18n="nav.cta">Book a call</a>
+    <button class="nav-hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
+
+<!-- Mobile drawer -->
+<div class="nav-drawer" id="navDrawer">
+  <a href="#services" data-i18n="nav.services" onclick="toggleMenu()">Services</a>
+  <a href="#work" data-i18n="nav.work" onclick="toggleMenu()">Work</a>
+  <a href="#about" data-i18n="nav.about" onclick="toggleMenu()">About</a>
+</div>
 
 <!-- HERO -->
 <div id="hero">
   <div class="hero-glow"></div>
   <div class="hero-eyebrow" data-i18n="hero.eyebrow">BI & Automation Consultant · Miami · LATAM</div>
   <h1 class="hero-headline">
-    <span data-i18n="hero.headline1">Your business runs</span><br>
-    <span data-i18n="hero.headline2">on manual work</span><br>
-    <span data-i18n="hero.headline3">that </span><em data-i18n="hero.headline4">should run itself.</em>
+    <span data-i18n="hero.h1">Your business runs</span><br>
+    <span data-i18n="hero.h2">on manual work</span><br>
+    <span data-i18n="hero.h3">that </span><em data-i18n="hero.h4">should run itself.</em>
   </h1>
-  <p class="hero-sub" data-i18n="hero.sub">
-    Stop managing your business with spreadsheets and gut feel. I help small and mid-size businesses in Miami and Latin America replace manual work with automated systems — real-time dashboards, AI workflows, automatic reporting, and data-driven decisions. No IT team required.
-  </p>
+  <p class="hero-sub" data-i18n="hero.sub">Stop managing your business with spreadsheets and gut feel. I help small and mid-size businesses in Miami and Latin America replace manual work with automated systems — real-time dashboards, AI workflows, automatic reporting, and data-driven decisions. No IT team required.</p>
   <div class="hero-actions">
     <a href="mailto:mariano@marianoimoberdorff.com" class="btn-primary" data-i18n="hero.cta">Book a free 30-min call</a>
     <a href="#work" class="btn-ghost">
       <span data-i18n="hero.cta2">See my work</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
   <div class="hero-badges">
@@ -63,8 +75,11 @@
 <div id="problem">
   <div class="problem-inner">
     <div class="problem-label" data-i18n="problem.label">The problem</div>
-    <p class="problem-text" data-i18n="problem.text">
-      Your team spends hours every week on tasks a system could do in seconds. <strong data-i18n="problem.strong1">Reports built manually. Data scattered across apps. Decisions made on gut feel.</strong> Meanwhile, your competitors are automating workflows, connecting their tools, and getting real-time visibility on what's actually happening in their business. <strong data-i18n="problem.strong2">The gap is not technology — it's implementation. And that's exactly what I fix.</strong>
+    <p class="problem-text">
+      <span data-i18n="problem.text">Your team spends hours every week on tasks a system could do in seconds.</span>
+      <strong data-i18n="problem.strong1"> Reports built manually. Data scattered across apps. Decisions made on gut feel.</strong>
+      <span data-i18n="problem.mid"> Meanwhile, your competitors are automating workflows, connecting their tools, and getting real-time visibility on what's actually happening in their business.</span>
+      <strong data-i18n="problem.strong2"> The gap is not technology — it's implementation. And that's exactly what I fix.</strong>
     </p>
   </div>
 </div>
@@ -74,7 +89,6 @@
   <div class="section-label reveal" data-i18n="services.label">What I do</div>
   <h2 class="section-title reveal reveal-delay-1" data-i18n="services.title">Four ways I can help your business</h2>
   <div class="services-grid reveal reveal-delay-2">
-
     <div class="service-card">
       <div class="service-num">01</div>
       <div class="service-name" data-i18n="s1.name">BI & Visibility</div>
@@ -82,7 +96,6 @@
       <p class="service-desc" data-i18n="s1.desc">Real-time dashboards connected to your existing data — POS, spreadsheets, CRM. You see revenue, costs, and margins without opening a single spreadsheet.</p>
       <div class="service-timeline" data-i18n="s1.time">2-week delivery</div>
     </div>
-
     <div class="service-card service-featured">
       <div class="service-num">02</div>
       <div class="service-name" data-i18n="s2.name">Process Automation</div>
@@ -90,7 +103,6 @@
       <p class="service-desc" data-i18n="s2.desc">I map your manual workflows and automate them with n8n — the open-source platform that connects your apps without expensive subscriptions. Reports, alerts, data sync, all running automatically.</p>
       <div class="service-timeline" data-i18n="s2.time">3–5 week delivery</div>
     </div>
-
     <div class="service-card">
       <div class="service-num">03</div>
       <div class="service-name" data-i18n="s3.name">AI Integration</div>
@@ -98,7 +110,6 @@
       <p class="service-desc" data-i18n="s3.desc">AI-powered tools built for your business — chatbots that answer customer questions, lead qualification, automatic content for social media, and intelligent internal assistants.</p>
       <div class="service-timeline" data-i18n="s3.time">3–4 week delivery</div>
     </div>
-
     <div class="service-card">
       <div class="service-num">04</div>
       <div class="service-name" data-i18n="s4.name">Full Partner</div>
@@ -106,14 +117,11 @@
       <p class="service-desc" data-i18n="s4.desc">Ongoing systems, dashboards, automation, and AI tools as your business grows. One point of contact. Everything connected. Always improving.</p>
       <div class="service-timeline" data-i18n="s4.time">Ongoing retainer</div>
     </div>
-
   </div>
   <div style="text-align:center; margin-top: 32px;" class="reveal reveal-delay-3">
     <a href="mailto:mariano@marianoimoberdorff.com" class="btn-ghost">
       <span data-i18n="services.cta">Not sure which one fits? Let's talk</span>
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     </a>
   </div>
 </section>
@@ -121,9 +129,8 @@
 <!-- WORK -->
 <section id="work">
   <div class="section-label reveal" data-i18n="work.label">Real work. Real businesses.</div>
-  <h2 class="section-title reveal reveal-delay-1" data-i18n="work.title">Three projects.<br>Three industries.</h2>
+  <h2 class="section-title reveal reveal-delay-1" data-i18n="work.title">Three projects. Three industries.</h2>
   <div class="work-grid reveal reveal-delay-2">
-
     <div class="work-item">
       <div class="work-meta">
         <div class="work-client">Planeta Formación</div>
@@ -133,16 +140,13 @@
         <p class="work-problem" data-i18n="w1.problem">Fragmented Excel-based system with no unified view across CRM, ERP, and marketing.</p>
         <p class="work-desc" data-i18n="w1.desc">Built a fully automated Microsoft 365 pipeline connecting all data sources into a single Power BI environment. Marketing and operations teams went from weekly manual reports to real-time dashboards accessible to every stakeholder.</p>
         <div class="work-stack">
-          <span class="stack-tag">SQL</span>
-          <span class="stack-tag">Power BI</span>
-          <span class="stack-tag">Power Automate</span>
-          <span class="stack-tag">SharePoint</span>
+          <span class="stack-tag">SQL</span><span class="stack-tag">Power BI</span>
+          <span class="stack-tag">Power Automate</span><span class="stack-tag">SharePoint</span>
           <span class="stack-tag">Dynamics 365</span>
         </div>
       </div>
       <div class="work-arrow">→</div>
     </div>
-
     <div class="work-item">
       <div class="work-meta">
         <div class="work-client">Atlantic Link Imports</div>
@@ -152,15 +156,12 @@
         <p class="work-problem" data-i18n="w2.problem">Multi-channel retail with inventory across locations, dual-currency costs, and zero margin visibility.</p>
         <p class="work-desc" data-i18n="w2.desc">End-to-end BI system connecting Google Sheets to Power BI: full inventory control, real margin visibility by SKU and channel, and automated financial reporting. The owner now has a clear picture of profitability for the first time.</p>
         <div class="work-stack">
-          <span class="stack-tag">Google Sheets</span>
-          <span class="stack-tag">Power BI</span>
-          <span class="stack-tag">Power Query</span>
-          <span class="stack-tag">DAX</span>
+          <span class="stack-tag">Google Sheets</span><span class="stack-tag">Power BI</span>
+          <span class="stack-tag">Power Query</span><span class="stack-tag">DAX</span>
         </div>
       </div>
       <div class="work-arrow">→</div>
     </div>
-
     <div class="work-item">
       <div class="work-meta">
         <div class="work-client">River Miami FC</div>
@@ -170,15 +171,12 @@
         <p class="work-problem" data-i18n="w3.problem">Academy managed entirely by intuition — no data on retention, revenue, or coaching performance.</p>
         <p class="work-desc" data-i18n="w3.desc">Designed a BI system surfacing retention rates, revenue by age category, attendance trends, and coach performance. The director now has a management tool — not just a spreadsheet.</p>
         <div class="work-stack">
-          <span class="stack-tag">Google Sheets</span>
-          <span class="stack-tag">Power BI</span>
-          <span class="stack-tag">Power Query</span>
-          <span class="stack-tag">DAX</span>
+          <span class="stack-tag">Google Sheets</span><span class="stack-tag">Power BI</span>
+          <span class="stack-tag">Power Query</span><span class="stack-tag">DAX</span>
         </div>
       </div>
       <div class="work-arrow">→</div>
     </div>
-
   </div>
 </section>
 
@@ -187,15 +185,9 @@
   <div class="about-left">
     <div class="section-label reveal" data-i18n="about.label">Who you're working with</div>
     <h2 class="section-title reveal reveal-delay-1" style="margin-bottom: 32px;">Mariano<br>Imoberdorff</h2>
-    <p class="about-bio reveal reveal-delay-2" data-i18n="about.bio1">
-      Before going independent, I spent <strong>3 years inside the corporate world</strong> — working as a data analyst at <strong>Planeta Formación</strong> in Barcelona, part of Grupo Planeta, one of Europe's largest international media groups. There I worked alongside large cross-functional teams to migrate a fragmented, Excel-based reporting system to a fully automated Microsoft 365 pipeline — integrating CRM, ERP, and marketing data for thousands of students across multiple countries.
-    </p>
-    <p class="about-bio reveal reveal-delay-2" data-i18n="about.bio2">
-      That experience taught me how enterprise-level systems are built. <strong>Then I went independent — and brought that same thinking to small businesses.</strong>
-    </p>
-    <p class="about-bio reveal reveal-delay-3" data-i18n="about.bio3">
-      Since then I've worked on <strong>20+ projects</strong> across retail, hospitality, sports, and logistics — helping business owners in Miami and Latin America replace manual operations with automated systems that actually scale. No IT department needed. No six-figure software budget. Just clean data, smart workflows, and dashboards your team will actually use.
-    </p>
+    <p class="about-bio reveal reveal-delay-2" data-i18n="about.bio1">Before going independent, I spent <strong>3 years inside the corporate world</strong> — working as a data analyst at <strong>Planeta Formación</strong> in Barcelona, part of Grupo Planeta, one of Europe's largest international media groups. There I worked alongside large cross-functional teams to migrate a fragmented, Excel-based reporting system to a fully automated Microsoft 365 pipeline — integrating CRM, ERP, and marketing data for thousands of students across multiple countries.</p>
+    <p class="about-bio reveal reveal-delay-2" data-i18n="about.bio2">That experience taught me how enterprise-level systems are built. <strong>Then I went independent — and brought that same thinking to small businesses.</strong></p>
+    <p class="about-bio reveal reveal-delay-3" data-i18n="about.bio3">Since then I've worked on <strong>20+ projects</strong> across retail, hospitality, sports, and logistics — helping business owners in Miami and Latin America replace manual operations with automated systems that actually scale. No IT department needed. No six-figure software budget. Just clean data, smart workflows, and dashboards your team will actually use.</p>
     <div class="about-langs reveal reveal-delay-3">
       <div class="lang-badge"><span class="lang-flag">🇺🇸</span> English</div>
       <div class="lang-badge"><span class="lang-flag">🇦🇷</span> Spanish</div>
@@ -203,35 +195,18 @@
   </div>
   <div class="about-right">
     <div class="about-stats reveal">
-      <div class="stat-box">
-        <div class="stat-num">3</div>
-        <div class="stat-label" data-i18n="stat1">Years corporate BI experience</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">20<span>+</span></div>
-        <div class="stat-label" data-i18n="stat2">Projects delivered</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">4</div>
-        <div class="stat-label" data-i18n="stat3">Industries served</div>
-      </div>
-      <div class="stat-box">
-        <div class="stat-num">2</div>
-        <div class="stat-label" data-i18n="stat4">Languages</div>
-      </div>
+      <div class="stat-box"><div class="stat-num">3</div><div class="stat-label" data-i18n="stat1">Years corporate BI experience</div></div>
+      <div class="stat-box"><div class="stat-num">20<span>+</span></div><div class="stat-label" data-i18n="stat2">Projects delivered</div></div>
+      <div class="stat-box"><div class="stat-num">4</div><div class="stat-label" data-i18n="stat3">Industries served</div></div>
+      <div class="stat-box"><div class="stat-num">2</div><div class="stat-label" data-i18n="stat4">Languages</div></div>
     </div>
     <div class="about-stack-label reveal reveal-delay-1" data-i18n="about.stack">Stack</div>
     <div class="about-stack reveal reveal-delay-2">
-      <span class="stack-pill">Power BI</span>
-      <span class="stack-pill">DAX</span>
-      <span class="stack-pill">Power Query</span>
-      <span class="stack-pill">SQL</span>
-      <span class="stack-pill">Power Automate</span>
-      <span class="stack-pill">n8n</span>
-      <span class="stack-pill">Google Sheets</span>
-      <span class="stack-pill">Microsoft 365</span>
-      <span class="stack-pill">SharePoint</span>
-      <span class="stack-pill">Dynamics 365</span>
+      <span class="stack-pill">Power BI</span><span class="stack-pill">DAX</span>
+      <span class="stack-pill">Power Query</span><span class="stack-pill">SQL</span>
+      <span class="stack-pill">Power Automate</span><span class="stack-pill">n8n</span>
+      <span class="stack-pill">Google Sheets</span><span class="stack-pill">Microsoft 365</span>
+      <span class="stack-pill">SharePoint</span><span class="stack-pill">Dynamics 365</span>
     </div>
   </div>
 </section>
@@ -242,9 +217,7 @@
   <div class="contact-inner">
     <div class="contact-eyebrow reveal" data-i18n="contact.eyebrow">Ready to start?</div>
     <h2 class="contact-title reveal reveal-delay-1" data-i18n="contact.title">Ready to see your<br>business clearly?</h2>
-    <p class="contact-sub reveal reveal-delay-2" data-i18n="contact.sub">
-      Let's start with a free 30-minute call. No pitch, no commitment — just a conversation about your operations and where automation can save you the most time.
-    </p>
+    <p class="contact-sub reveal reveal-delay-2" data-i18n="contact.sub">Let's start with a free 30-minute call. No pitch, no commitment — just a conversation about your operations and where automation can save you the most time.</p>
     <a href="mailto:mariano@marianoimoberdorff.com" class="btn-primary reveal reveal-delay-3" data-i18n="contact.cta">Schedule a call →</a>
     <div class="contact-details reveal reveal-delay-3">
       <span class="contact-item" data-i18n="contact.d1">Miami, FL · LATAM</span>
