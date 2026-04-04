@@ -1,0 +1,15 @@
+# Environment variables (NEVER commit secrets)
+.env
+.env.local
+.env.production
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+*.swp
+
+# Node (if needed later)
+node_modules/
