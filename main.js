@@ -10,17 +10,28 @@ const translations = {
     "problem.strong1":"Reports built manually. Data scattered across apps. Decisions made on gut feel.",
     "problem.mid":"Meanwhile, your competitors are automating workflows, connecting their tools, and getting real-time visibility on what's actually happening in their business.",
     "problem.strong2":"The gap is not technology — it's implementation. And that's exactly what I fix.",
-    "services.label":"What I do","services.title":"Four ways I can help your business",
+    "services.label":"What I do","services.title":"Six ways I can help your business",
+
     "s1.name":"BI & Visibility","s1.price":"Starting at $1,500","s1.time":"2-week delivery",
     "s1.desc":"Real-time dashboards connected to your existing data — POS, spreadsheets, CRM. You see revenue, costs, and margins without opening a single spreadsheet.",
+
     "s2.name":"Process Automation","s2.price":"Starting at $3,500","s2.time":"3–5 week delivery",
     "s2.desc":"I map your manual workflows and build custom automation systems that connect your apps without expensive subscriptions. Reports, alerts, data sync — all running automatically.",
+
     "s3.name":"AI Integration","s3.price":"Starting at $2,500","s3.time":"3–4 week delivery",
     "s3.desc":"AI-powered tools built for your business — chatbots that answer customer questions, lead qualification, automatic content for social media, and intelligent internal assistants.",
-    "s4.name":"Full Partner","s4.price":"From $1,200 / month","s4.time":"Ongoing retainer",
-    "s4.desc":"Ongoing systems, dashboards, automation, and AI tools as your business grows. One point of contact. Everything connected. Always improving.",
+
+    "s4.name":"Web & Digital Presence","s4.price":"Starting at $1,200","s4.time":"2–3 week delivery",
+    "s4.desc":"A complete web presence for your business — landing page, blog, event booking form, Google Reviews integration, and Instagram feed. Built to convert visitors into customers.",
+
+    "s5.name":"Data Audit & Quick Wins","s5.price":"Starting at $500","s5.time":"1 week delivery",
+    "s5.desc":"A 1-week review of your current tools, data sources, and workflows. You get a clear diagnosis of what's broken, what's missing, and a prioritized roadmap to fix it. The fastest way to know where to start.",
+
+    "s6.name":"Full Partner","s6.price":"From $1,200 / month","s6.time":"Ongoing retainer",
+    "s6.desc":"Ongoing systems, dashboards, automation, and AI tools as your business grows. One point of contact. Everything connected. Always improving.",
+
     "services.cta":"Not sure which one fits? Let's talk",
-    "work.label":"Real work. Real businesses.","work.title":"Three projects. Three industries.",
+    "work.label":"Real work. Real businesses.","work.title":"Four projects. Four industries.",
     "w1.industry":"Education · Barcelona, Spain",
     "w1.problem":"Fragmented Excel-based system with no unified view across CRM, ERP, and marketing.",
     "w1.desc":"Built a fully automated Microsoft 365 pipeline connecting all data sources into a single Power BI environment. Marketing and operations teams went from weekly manual reports to real-time dashboards accessible to every stakeholder.",
@@ -30,6 +41,9 @@ const translations = {
     "w3.industry":"Sports Academy · Miami, FL",
     "w3.problem":"Academy managed entirely by intuition — no data on retention, revenue, or coaching performance.",
     "w3.desc":"Designed a BI system surfacing retention rates, revenue by age category, attendance trends, and coach performance. The director now has a management tool — not just a spreadsheet.",
+    "w4.industry":"Food & Beverage · Miami, FL",
+    "w4.problem":"Local business with strong Instagram presence but no website, no way to capture event leads, and zero visibility into daily sales performance.",
+    "w4.desc":"Built a full web presence with event booking system plus a daily sales dashboard connected to their POS. Automated weekly reports delivered every Monday morning.",
     "about.label":"Who you're working with",
     "about.bio1":"Before going independent, I spent <strong>3 years inside the corporate world</strong> — working as a data analyst at <strong>Planeta Formación</strong> in Barcelona, part of Grupo Planeta, one of Europe's largest international media groups. There I worked alongside large cross-functional teams to migrate a fragmented, Excel-based reporting system to a fully automated Microsoft 365 pipeline — integrating CRM, ERP, and marketing data for thousands of students across multiple countries.",
     "about.bio2":"That experience taught me how enterprise-level systems are built. <strong>Then I went independent — and brought that same thinking to small businesses.</strong>",
@@ -51,17 +65,28 @@ const translations = {
     "problem.strong1":"Reportes armados a mano. Datos dispersos en distintas apps. Decisiones tomadas por intuición.",
     "problem.mid":"Mientras tanto, tu competencia automatiza procesos, conecta sus herramientas y tiene visibilidad en tiempo real de lo que pasa en su negocio.",
     "problem.strong2":"La brecha no es tecnológica — es de implementación. Y eso es exactamente lo que yo soluciono.",
-    "services.label":"Lo que hago","services.title":"Cuatro formas de ayudar a tu negocio",
+    "services.label":"Lo que hago","services.title":"Seis formas de ayudar a tu negocio",
+
     "s1.name":"BI & Visibilidad","s1.price":"Desde $1,500","s1.time":"Entrega en 2 semanas",
     "s1.desc":"Dashboards en tiempo real conectados a tus datos actuales — POS, planillas, CRM. Ves ingresos, costos y márgenes sin abrir una sola planilla.",
+
     "s2.name":"Automatización de Procesos","s2.price":"Desde $3,500","s2.time":"Entrega en 3–5 semanas",
     "s2.desc":"Mapeo tus flujos de trabajo manuales y construyo sistemas de automatización a medida que conectan tus apps sin suscripciones costosas. Reportes, alertas y sincronización de datos, todo funcionando solo.",
+
     "s3.name":"Integración con IA","s3.price":"Desde $2,500","s3.time":"Entrega en 3–4 semanas",
     "s3.desc":"Herramientas con IA diseñadas para tu negocio — chatbots que responden preguntas de clientes, calificación de leads, contenido automático para redes sociales y asistentes internos inteligentes.",
-    "s4.name":"Socio Estratégico","s4.price":"Desde $1,200 / mes","s4.time":"Retainer mensual",
-    "s4.desc":"Sistemas, dashboards, automatización e IA en constante evolución a medida que crece tu negocio. Un solo punto de contacto. Todo conectado. Siempre mejorando.",
+
+    "s4.name":"Web & Presencia Digital","s4.price":"Desde $1,200","s4.time":"Entrega en 2–3 semanas",
+    "s4.desc":"Una presencia web completa para tu negocio — landing page, blog, formulario de reserva de eventos, integración con Google Reviews y feed de Instagram. Diseñada para convertir visitantes en clientes.",
+
+    "s5.name":"Data Audit & Quick Wins","s5.price":"Desde $500","s5.time":"Entrega en 1 semana",
+    "s5.desc":"Una revisión de una semana de tus herramientas actuales, fuentes de datos y flujos de trabajo. Recibís un diagnóstico claro de lo que está fallando, lo que falta y una hoja de ruta priorizada para corregirlo. La forma más rápida de saber por dónde empezar.",
+
+    "s6.name":"Socio Estratégico","s6.price":"Desde $1,200 / mes","s6.time":"Retainer mensual",
+    "s6.desc":"Sistemas, dashboards, automatización e IA en constante evolución a medida que crece tu negocio. Un solo punto de contacto. Todo conectado. Siempre mejorando.",
+
     "services.cta":"¿No sabés cuál es el tuyo? Hablemos",
-    "work.label":"Trabajo real. Negocios reales.","work.title":"Tres proyectos. Tres industrias.",
+    "work.label":"Trabajo real. Negocios reales.","work.title":"Cuatro proyectos. Cuatro industrias.",
     "w1.industry":"Educación · Barcelona, España",
     "w1.problem":"Sistema fragmentado en Excel sin visibilidad unificada de CRM, ERP y marketing.",
     "w1.desc":"Construí un pipeline automatizado en Microsoft 365 conectando todas las fuentes de datos en un único entorno de Power BI. Los equipos de marketing y operaciones pasaron de reportes manuales semanales a dashboards en tiempo real accesibles para todos.",
@@ -71,6 +96,9 @@ const translations = {
     "w3.industry":"Academia Deportiva · Miami, FL",
     "w3.problem":"Academia gestionada completamente por intuición — sin datos sobre retención, ingresos ni rendimiento de los entrenadores.",
     "w3.desc":"Diseñé un sistema BI que muestra tasas de retención, ingresos por categoría de edad, tendencias de asistencia y performance por entrenador. El director ahora tiene una herramienta de gestión real — no solo una planilla.",
+    "w4.industry":"Gastronomía · Miami, FL",
+    "w4.problem":"Negocio local con fuerte presencia en Instagram pero sin sitio web, sin forma de captar leads de eventos y sin visibilidad del rendimiento de ventas diario.",
+    "w4.desc":"Construí una presencia web completa con sistema de reservas para eventos, más un dashboard de ventas diarias conectado a su POS. Reportes semanales automatizados entregados cada lunes por la mañana.",
     "about.label":"Con quién vas a trabajar",
     "about.bio1":"Antes de volverme independiente, pasé <strong>3 años en el mundo corporativo</strong> — como analista de datos en <strong>Planeta Formación</strong> en Barcelona, parte de Grupo Planeta, uno de los grupos internacionales de medios más grandes de Europa. Ahí trabajé junto a equipos cross-funcionales para migrar un sistema de reportes fragmentado en Excel a un pipeline automatizado en Microsoft 365 — integrando datos de CRM, ERP y marketing para miles de estudiantes en múltiples países.",
     "about.bio2":"Esa experiencia me enseñó cómo se construyen los sistemas a escala enterprise. <strong>Luego me lancé de forma independiente — y traje esa misma mentalidad a los negocios pequeños.</strong>",
@@ -112,20 +140,27 @@ window.addEventListener('scroll', () => {
 // Scroll reveal
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => {
-    if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      observer.unobserve(e.target);
+    }
   });
 }, { threshold: 0.12 });
+
 document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
 // Smooth scroll
 document.querySelectorAll('a[href^="#"]').forEach(a => {
   a.addEventListener('click', e => {
     const target = document.querySelector(a.getAttribute('href'));
-    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
   });
 });
 
-// ─── HAMBURGER MENU ─────────────────────────────────────────────
+// Hamburger menu
 function toggleMenu() {
   const hamburger = document.getElementById('hamburger');
   const drawer = document.getElementById('navDrawer');

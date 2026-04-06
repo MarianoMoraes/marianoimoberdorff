@@ -78,7 +78,7 @@ section { padding: 120px 48px; max-width: 1400px; margin: 0 auto; }
 #services { border-top: 1px solid var(--border); }
 .section-label { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); font-weight: 500; margin-bottom: 16px; }
 .section-title { font-family: var(--font-display); font-size: clamp(36px, 5vw, 58px); font-weight: 700; letter-spacing: -0.03em; line-height: 1.05; margin-bottom: 64px; max-width: 700px; }
-.services-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
+.services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
 .service-card { background: var(--bg); padding: 36px 28px; position: relative; transition: background 0.3s; }
 .service-card:hover { background: var(--bg3); }
 .service-num { font-family: var(--font-display); font-size: 11px; letter-spacing: 0.08em; color: var(--text-muted); font-weight: 600; margin-bottom: 20px; }
